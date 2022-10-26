@@ -105,7 +105,6 @@ bool udp_close (udp_t *udp)
 
 static bool udp_type_open (udp_t *udp, udp_args_t *args)
 {
-    bool status = false;
     udp_open_t open;
 
     udp->type = args->type;

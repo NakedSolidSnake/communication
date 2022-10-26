@@ -14,7 +14,7 @@ int main (int argc, char *argv[])
     udp_args_t args = 
     {
         .type = udp_type_client,
-        .hostname = "127.0.0.1",
+        .hostname = "localhost",
         .port = "1234"
     };
 

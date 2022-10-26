@@ -4,6 +4,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+#define UDP_HOSTNAME_SIZE   1024
+
 typedef void (*event_t) (char *buffer, size_t *size, void *data);
 
 typedef enum 
@@ -16,7 +18,7 @@ typedef struct
 {
     int socket;
     udp_type_t type;
-    const char *hostname;
+    char hostname [UDP_HOSTNAME_SIZE];
     const char *port;
     char *buffer;
     size_t size;
