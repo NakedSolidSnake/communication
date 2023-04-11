@@ -23,6 +23,7 @@ bool udp_server_open (udp_t *udp, udp_args_t *args)
         udp->port = args->port;
         udp->on_receive = args->on_receive;
         udp->on_send = args->on_send;
+        udp->data = args->data;
 
         status = udp_server_configure (udp);
     }
